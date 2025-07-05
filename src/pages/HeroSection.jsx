@@ -1,13 +1,16 @@
 import React from 'react'
-import { ArrowUp } from 'iconsax-react';
+import {useRef} from "react";
+import { useInView } from "framer-motion";
 import { assets } from '../assets/assets';
 import BlurCircle from '../Components/BlurCircle';
 
 const HeroSection = () => {
+   const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
-    <section className="relative overflow-hidden">
+    <section id='home' ref={ref} className="relative overflow-hidden mt-10  md:mt-auto">
       <center>
-        <div className="md:mt-15 space-y-2 animate-hero-fade">
+        <div className="md:mt-35 space-y-2 animate-hero-fade">
           <div className="inline-block px-4 py-2 bg-orange-100 text-sm rounded-full font-semibold hover-magnetic animate-magnetic-pop delay-100">
             Nameste!
           </div>
@@ -28,20 +31,18 @@ const HeroSection = () => {
             <BlurCircle right='50px' top='100px' />
           </div>
           <div className="animate-morph-float delay-700">
-            <BlurCircle bottom='50px' left='200px' />
           </div>
           
           <div className=" delay-900">
-            <img src={assets.ellipse} className='md:mt-20  animate-breathe' alt="" />
+            <img src={assets.ellipse} className='md:mt-10  animate-breathe' alt="" />
           </div>
-          
-          <div className='absolute -translate-y-46 -translate-x-120 top-1/2 right-10 delay-1100'>
-            <img src={assets.firstImage}  width="400px" alt="Profile" className="animate-breath" />
+          <div className="absolute top-15 left-0 w-full h-full flex justify-center items-center z-0 md:z-10 lg:z-20">
+          <img src={assets.firstImage} alt="Profile" className="animate-breath w-62 sm:w-60 md:w-80 lg:w-96 object-contain"/>
           </div>
         </div>
       </center>
       
-      {/* Modern CSS Animations */}
+      {/* Css Animation Animations */}
       <style jsx>{`
         @keyframes heroFadeUp {
           0% {

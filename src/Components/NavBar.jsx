@@ -6,8 +6,8 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="relative">
-      <div className={`max-md:fixed md:mt-5 max-md:top-0 max-md:left-0 max-md:z-50 flex flex-col md:flex-row items-center justify-center gap-8 max-md:w-full max-md:h-screen px-8 py-4 max-md:backdrop-blur bg-black md:bg-black md:border border-gray-300/20 md:rounded-full transition-all duration-500 ease-in-out mx-auto md:max-w-[80%] md:hover:scale-105 md:hover:shadow-2xl md:hover:shadow-orange-500/20 ${isOpen ? 'max-md:translate-x-0' : 'max-md:-translate-x-full'}`}>
+    <nav className="relative ">
+      <div className={`max-md:fixed fixed right-0 left-0  z-0 md:z-10 lg:z-20 md:mt-5 max-md:top-0 max-md:left-0 max-md:z-50 flex flex-col md:flex-row items-center justify-center gap-8 max-md:w-full max-md:h-screen px-8 py-4 max-md:backdrop-blur bg-black md:bg-[rgba(0,0,0,0.3)] backdrop-blur-md md:border border-gray-300/20 md:rounded-full transition-all duration-500 ease-in-out mx-auto md:max-w-[80%] md:hover:scale-105 md:hover:shadow-2xl md:hover:shadow-orange-500/20 ${isOpen ? 'max-md:translate-x-0' : 'max-md:-translate-x-full'}`}>
         
         <CloseCircle
           color='#FD853A'

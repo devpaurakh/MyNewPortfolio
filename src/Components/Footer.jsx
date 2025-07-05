@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="md:max-w-96">
                     <img className="w-36 h-auto" src={assets.logo} alt="logo" />
                     <p className="mt-6 text-sm">
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        I am a dedicated mobile app developer currently pursuing a bachelor's degree at Islington College. With a genuine passion for technology, they specialize in both iOS and Android app development
                     </p>
                     <div className="flex items-center gap-2 mt-4">
                         <img src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/refs/heads/main/assets/appDownload/googlePlayBtnBlack.svg" alt="google play" className="h-10 w-auto border border-white rounded" />
@@ -19,10 +19,10 @@ const Footer = () => {
                     <div>
                         <h2 className="font-semibold mb-5">Company</h2>
                         <ul className="text-sm space-y-2">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Contact us</a></li>
-                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#services">About us</a></li>
+                            <li><a href="#contact">Contact us</a></li>
+                            <li><a href="#about">Experience</a></li>
                         </ul>
                     </div>
                     <div>

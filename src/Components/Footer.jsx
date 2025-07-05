@@ -1,5 +1,6 @@
 import React from 'react'
 import { assets } from '../assets/assets'
+import { GithubIcon, Linkedin } from 'lucide-react'
 
 const Footer = () => {
   return (
@@ -28,14 +29,18 @@ const Footer = () => {
                     <div>
                         <h2 className="font-semibold mb-5">Get in touch</h2>
                         <div className="text-sm space-y-2">
-                            <p>+1-234-567-890</p>
-                            <p>contact@example.com</p>
-                        </div>
+                            <p>paurakhsaud2019@gmail.com</p>
+                            <div className="flex flex-wrap justify-center gap-8 text-xl">
+                    <a href="https://www.linkedin.com/in/paurakh-saud-17b4021a3/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-blue-600 hover:underline"> <Linkedin /> LinkedIn </a>
+
+                    <a href="https://github.com/devpaurakh" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white hover:underline"><GithubIcon /> GitHub </a>
+                    </div>
+                    </div>
                     </div>
                 </div>
             </div>
             <p className="pt-4 text-center text-sm pb-5">
-                Copyright {new Date().getFullYear()} © PreBuiltUI. All Right Reserved.
+                Copyright {new Date().getFullYear()} © Paurakh Saud. All Right Reserved.
             </p>
         </footer>
   )

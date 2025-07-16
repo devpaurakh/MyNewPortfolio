@@ -7,6 +7,9 @@ import WorkExperience from './pages/WorkExperience'
 import Portfolio from './pages/Portfolio'
 
 const App = () => {
+
+  
+
   return (
     <>
       <NavBar/>
